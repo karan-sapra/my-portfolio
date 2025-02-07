@@ -1,0 +1,57 @@
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: 500;
+        }
+        .navbar-dark .navbar-brand {
+            font-weight: bold;
+            color: #fff;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero .btn {
+            margin-top: 20px;
+            background-color: #ff9800;
+            color: white;
+            font-weight: bold;
+        }
+        section {
+            padding: 60px 20px;
+            background: #ffffff;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .footer {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        .footer a:hover {
+            color: #ff9800;
+        }
+        .tech-logos img {
+            width: 80px;
+            margin: 10px;
+        }

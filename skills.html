@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+<div id="header"></div>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="tech-logos">
+            <img src="html-logo.png" alt="HTML">
+            <img src="css-logo.png" alt="CSS">
+            <img src="js-logo.png" alt="JavaScript">
+            <img src="java-logo.png" alt="Java">
+            <img src="spring-logo.png" alt="Spring Boot">
+            <img src="mysql.png" alt="MySQL">
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script>
+        // Function to load HTML files into elements
+        function loadComponent(id, file) {
+            fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data);
+        }
+        
+        // Load Header and Footer
+        loadComponent("header", "header.html");
+        loadComponent("footer", "footer.html");
+    </script>
+</body>
+</html>

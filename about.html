@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>  
+<body>
+    
+<div id="header"></div>
+<div class="container mt-5">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a full-stack developer specializing in Java and Spring Boot, with experience in developing web applications and APIs. I love coding, learning new technologies, and optimizing systems for better performance.</p>
+        <p>If you have any queries or want to collaborate, feel free to reach out through the contact section below.</p>
+    </section>
+
+<div id="footer"></div>
+<script>
+    // Function to load HTML files into elements
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data);
+    }
+
+    // Load Header and Footer
+    loadComponent("header", "header.html");
+    loadComponent("footer", "footer.html");
+</script>
+</body>
+</html>

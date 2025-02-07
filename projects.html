@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="header"></div>    
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><strong>E-commerce Platform:</strong> Developed using Spring Boot & microservices. <a href="#">View on GitHub</a></li>
+        <li><strong>Google Sign-In Authentication:</strong> Integrated OAuth in React.js app. <a href="#">View on GitHub</a></li>
+        <li><strong>W3Schools Clone:</strong> Built using Laravel & deployed on AWS. <a href="#">View on GitHub</a></li>
+    </ul>
+</section>
+<div id="footer"></div>
+<script>
+    // Function to load HTML files into elements
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data);
+    }
+
+    // Load Header and Footer
+    loadComponent("header", "header.html");
+    loadComponent("footer", "footer.html");
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<footer class="footer">
+    <p>Feel free to reach out!</p>
+    <p>Email: <a href="mailto:karansapra683@gmail.com">karansapra683@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/karan-sapra-2370b3123/" target="_blank">LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/karan-sapra" target="_blank">GitHub Profile</a></p>
+    <p>&copy; 2025 Karan Sapra. All Rights Reserved.</p>
+</footer>
+<script>
+    // Function to load HTML files into elements
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data);
+    }
+
+    // Load Header and Footer
+    loadComponent("header", "header.html");
+    loadComponent("footer", "footer.html");
+    loadComponent("skills","skills.html")
+    loadComponent("projects","projects.html")
+    loadComponent("about","about.html")
+    
+</script>
+</body>
+</html>
