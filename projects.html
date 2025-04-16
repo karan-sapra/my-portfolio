@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<body>
+<div id="header"></div>    
+<div class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="project-card">
+                <h3>E-Commerce Platform</h3>
+                <p class="project-tech">Java • Spring Boot • MySQL • REST APIs</p>
+                <p class="project-description">
+                    Developed a full-stack e-commerce platform with features like user authentication, 
+                    product management, and order processing. Implemented RESTful APIs and 
+                    integrated payment gateway.
+                </p>
+                <div class="project-links">
+                    <a href="#" class="btn btn-outline-primary">View Demo</a>
+                    <a href="#" class="btn btn-outline-secondary">Source Code</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+            <div class="project-card">
+                <h3>Task Management System</h3>
+                <p class="project-tech">Java • Spring MVC • Hibernate • Bootstrap</p>
+                <p class="project-description">
+                    Built a task management application with user roles, task assignment, 
+                    and progress tracking. Features include real-time updates and email notifications.
+                </p>
+                <div class="project-links">
+                    <a href="#" class="btn btn-outline-primary">View Demo</a>
+                    <a href="#" class="btn btn-outline-secondary">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<script>
+    // Function to load HTML files into elements
+    function loadComponent(id, file) {
+        fetch(file)
+            .then(response => response.text())
+            .then(data => document.getElementById(id).innerHTML = data);
+    }
+
+    // Load Header and Footer
+    loadComponent("header", "header.html");
+    loadComponent("footer", "footer.html");
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
